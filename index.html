@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Preenchimento automático por CEP</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="container">
+<h1>Formulário de Endereço</h1>
+
+
+<form id="address-form" autocomplete="off">
+<label for="cep">CEP</label>
+<input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" />
+
+
+<label for="logradouro">Logradouro</label>
+<input type="text" id="logradouro" name="logradouro" />
+
+
+<label for="numero">Número</label>
+<input type="text" id="numero" name="numero" />
+
+
+<label for="complemento">Complemento</label>
+<input type="text" id="complemento" name="complemento" />
+
+
+<label for="bairro">Bairro</label>
+<input type="text" id="bairro" name="bairro" />
+
+
+<label for="cidade">Cidade</label>
+<input type="text" id="cidade" name="cidade" />
+
+
+<label for="uf">Estado (UF)</label>
+<input type="text" id="uf" name="uf" maxlength="2" />
+
+
+<div class="actions">
+<button type="submit">Enviar</button>
+<button type="button" id="clear-btn">Limpar</button>
+</div>
+</form>
+
+
+<p class="note">Os dados são salvos automaticamente no seu navegador (localStorage).</p>
+</main>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
